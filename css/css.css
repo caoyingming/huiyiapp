@@ -111,7 +111,7 @@ body{
 .content .load{
 	
 	position: relative;
-	margin-bottom: 0.8rem;
+	margin-bottom: 0.6rem;
 	padding:  0 0.48rem;
 }
 .content .load p{
@@ -142,7 +142,10 @@ body{
 	position: absolute;
 	left: 50%;
 	margin-left: -1.34rem;
-	top: -0.63rem;
+	bottom: -1.2rem;
+	transition: all .6s;
+	display: none;
+	
 }
 
 /*二次扫描*/
@@ -167,7 +170,7 @@ html{
 }
 .contentTwo .load{
 	
-	padding-bottom: 0.8rem;
+	padding-bottom: 0.6rem;
 }
 .contentTwo .load p{
 	color: #000;
