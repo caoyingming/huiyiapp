@@ -94,6 +94,7 @@ body{
 .content .main .load{
 	margin-top: 2rem;
 	position: relative;
+	padding-bottom: 0.8rem;
 }
 .content .main .load p{
 	font-size: 0.36rem;
@@ -148,6 +149,7 @@ html{
 }
 .contentTwo .mainTwo .load{
 	margin-top: 2.5rem;
+	padding-bottom: 0.8rem;
 }
 .contentTwo .mainTwo .load p{
 	color: #000;
