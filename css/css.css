@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 0.3rem
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{font-size:100px;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;color:#111;}
+h1{font-size:0.8rem;}
+h2{font-size:0.7rem;}
+h3{font-size:0.6rem;}
+h4{font-size:0.5rem;}
+h5{font-size:0.4rem;}
+h6{font-size:0.3rem;}
+a{ color:#1763bb;font-size:0.3rem; word-wrap:break-word;}
+li{font-size:0.3rem; }
+
+strong{ font-size:0.3rem;}
+body{
+	font-family: "Microsoft YaHei",Arial;
+	width: 100%;
+	height: 100%;
+	background: #226ccd;
+}
+
+.content{
+	width: 100%;
+	background: #226ccd;
+	
+}
+.content .header h1{
+	color: #fff;
+	font-size: 0.36rem;
+	text-align: center;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.content .main .logo{
+	width: 6.42rem;
+	height: 4.30rem;
+	background: url(../image/logobg.png) no-repeat center;
+	background-size: 100%; 
+	margin: 0 auto;
+	position: relative;
+	top: -0.8rem;
+}
+.content .main{
+	padding: 0 .48rem;
+
+}
+.content .main .logo img{
+	width: 1.97rem;
+	height: 1.97rem;
+	margin:0 auto; 
+	display: block;
+	padding-top: 1rem;
+}
+.content .main form .p1 input{
+	display: inline-block;
+	width: 5.06rem;
+	height: 0.93rem;
+	border: 1px solid #fff;
+	outline: none;
+	border-radius: 0.5rem;
+	font-size: 0.3rem;
+	line-height: 0.93rem;
+	color: rgba(255,255,255,0.8);
+	background-color:  #226ccd;
+	background: url(../image/user.png) no-repeat 0.4rem center;
+	padding-left: 1.1rem
+}
+.content .main form .p2 input{
+	display: inline-block;
+	width: 6.16rem;
+	height: 0.93rem;
+	border: none;
+	outline: none;
+	border-radius: 0.5rem;
+	font-size: 0.36rem;
+	line-height: 0.93rem;
+	background-color:  #fff;
+	color: #216ccc;
+	margin-top: 0.34rem;
+}
+.content .main form .p2 input.dis{
+	background: rgba(255,255,255,0.6);
+	display: none;
+}
+.content .main .load{
+	margin-top: 2rem;
+	position: relative;
+}
+.content .main .load p{
+	font-size: 0.36rem;
+	color: #fff;
+	margin-bottom: 0.34rem;
+} 
+.content .main .load a{
+	width: 2.9rem;
+	height: 0.93rem;
+	display: inline-block;
+	border:1px solid #fff;
+	border-radius: 0.5rem;
+	line-height: 0.93rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+}
+.content .main .load .hint{
+	width: 2.08rem;
+	height: 0.9rem;
+	color: #fff;
+	padding-left: 0.7rem;
+	background: rgba(69,71,71,0.9);
+	border-radius: 0.2rem;
+	font-size: 0.24rem;
+	padding-top: 0.16rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.34rem;
+	top: -0.63rem;
+}
+
+/*二次扫描*/
+html{
+	width: 100%;
+	height: 100%;
+}
+.contentTwo .header{
+	background: #226ccd;
+}
+.contentTwo{
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display:box;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+	background: #fff;
+}
+.contentTwo .mainTwo{
+	-webkit-box-flex: 1;
+}
+.contentTwo .mainTwo .load{
+	margin-top: 2.5rem;
+}
+.contentTwo .mainTwo .load p{
+	color: #000;
+}
+.contentTwo .mainTwo .load a{
+	background: #216ccc;
+}
+.contentTwo .mainTwo .box img{
+	display: block;
+	width: 2.01rem;
+	height: 2.01rem;
+	margin: 1.46rem auto 0;
+}
+.contentTwo .mainTwo .box p{
+	text-align: center;
+	color: #000;
+	margin-top: 0.46rem;
+}
+.contentTwo .mainTwo .box p span{
+	color: #216ccc;
+}
+.contentTwo .mainTwo .box input{
+	display: inline-block;
+	width: 2.42rem;
+	height: 0.78rem;
+	text-align: center;
+	outline: none;
+	border: 1px solid #dedede;
+	border-radius: 0.5rem;
+	background: #fff;
+	color: #000;
+	font-size: 0.36rem;
+}
+/*验证通过*/
+.contentS{
+	background: #f4f4f4;
+	
+}
+.contentS .header{
+	background: #226ccd;
+}
+.contentS .load{
+	margin-top: 2.5rem;
+}
+.contentS .load p{
+	color: #000;
+}
+.contentS .load a{
+	background: #216ccc;
+}
+.contentS .mainS .list{
+	background: #fff;
+}
+.contentS .mainS {
+	padding: 0;
+}
+.contentS .mainS .list ul li{
+	height: 1.08rem;
+	border-bottom: 1px solid #e3e3e3;
+	font-size: 0.28rem;
+	line-height: 1.08rem;
+	padding-left: 0.5rem;
+}
+.contentS .mainS .list ul li .span1{
+	display: inline-block;
+	width: 1.6rem;
+	
+}
+
+.contentS .load{
+	margin-top: 0;
+	position: relative;
+	padding: 0 0.48rem;
+	padding-bottom: 1.4rem;
+}
+
+.contentS .load p{
+	font-size: 0.36rem;
+	color: #000;
+	margin-bottom: 0.34rem;
+} 
+.contentS .load a{
+	width: 2.9rem;
+	height: 0.93rem;
+	display: inline-block;
+	border:1px solid #fff;
+	border-radius: 0.5rem;
+	line-height: 0.93rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #fff;
+}
