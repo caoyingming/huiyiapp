@@ -62,6 +62,9 @@ body{
 	display: block;
 	padding-top: 1rem;
 }
+.content .main form .p1{
+	position: relative;
+}
 .content .main form .p1 input{
 	display: inline-block;
 	width: 5.06rem;
@@ -73,9 +76,21 @@ body{
 	line-height: 0.93rem;
 	color: rgba(255,255,255,0.8);
 	background-color:  #226ccd;
-	background: url(../image/user.png) no-repeat 0.4rem center;
 	padding-left: 1.1rem
 }
+.content .main form .p1:after{
+	content: '';
+	display: block;
+	width: 0.31rem;
+	height: 0.35rem;
+	background: url(../image/user.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0.7rem;
+	top: 50%;
+	margin-top: -0.17rem;
+}
+
 .content .main form .p2 input{
 	display: inline-block;
 	width: 6.16rem;
@@ -151,7 +166,7 @@ html{
 	-webkit-box-flex: 1;
 }
 .contentTwo .load{
-	margin-top: 2.5rem;
+	
 	padding-bottom: 0.8rem;
 }
 .contentTwo .load p{
