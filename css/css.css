@@ -142,10 +142,13 @@ body{
 	position: absolute;
 	left: 50%;
 	margin-left: -1.34rem;
-	bottom: -1.2rem;
-	transition: all .6s;
-	display: none;
-	
+	opacity: 0;
+	bottom: -1.2rem;	
+	transition: all 1s;	
+}
+.content .load .hint.show{	
+	opacity: 1;
+	bottom:1.2rem;
 }
 
 /*二次扫描*/

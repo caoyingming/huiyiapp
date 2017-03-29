@@ -14,7 +14,9 @@
 		<div class="main">
 			<div class="logo"><img src="image/logo.png" alt=""></div>
 			<form action="">
-				<p class="p1"><input type="text" value="" placeholder="请输入手机号码" id="txt"></p>
+				<p class="p1">
+					<input type="text" placeholder="请输入手机号码" id="txt">
+				</p>
 				<p class="p2">
 					<input type="button" value="确定" class="block">
 					<input type="button" value="确定" disabled="disabled" class="dis">
@@ -37,16 +39,27 @@
 	<script type="text/javascript" src='js/public.js'></script>
 	<script type="text/javascript">
 		$(function(){
-			var reg =/^1[0-9]\d{11}$/
-			var txt=$('#txt').val();
+			var reg =/^1\d{10}$/
 			$("#txt").blur(function(){
+				var txt=$('#txt').val();
+				console.log(txt);
 				if(!reg.test(txt)){
-					$('.hint').fadeIn(1).css({
+					/*$('.hint').fadeIn(1).css({
 						"bottom":"1.2rem"
-					})
-				}
+					})*/
+
+					$('.hint').addClass("show");
+
+				} 
+				return setTimeout(function(){
+							//$('.hint').fadeOut(1);
+							$('.hint').removeClass("show");
+						},3000)
+				
 			})
 		})
 	</script>
 </body>
 </html>
+
+
