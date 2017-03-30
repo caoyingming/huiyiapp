@@ -51,15 +51,15 @@
 
 
 		
-var myScroll;
+		var myScroll;
 
-function loaded () {
-	myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
-}
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-	capture: false,
-	passive: false
-} : false);
+		function loaded () {
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true ,freeScroll:true});
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+			capture: false,
+			passive: false
+		} : false);
 
 	</script>
 </body>

@@ -54,7 +54,7 @@ body{
 .content .main{
 	padding: 0 0.48rem;
 	-webkit-box-flex: 1;
-	overflow: hidden;
+	
 }
 .content .main .logo img{
 	width: 1.97rem;
@@ -147,7 +147,7 @@ body{
 	left: 50%;
 	margin-left: -1.34rem;
 	opacity: 0;
-	bottom: -1.2rem;	
+	bottom: -0.5rem;	
 	transition: all 1s;	
 }
 .content .load .hint.show{	
@@ -234,6 +234,7 @@ html{
 }
 .contentS .mainS {
 	padding: 0;
+	overflow: hidden;
 }
 .contentS .mainS .list ul li{
 	height: 1.08rem;
