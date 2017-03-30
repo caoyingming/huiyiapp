@@ -115,7 +115,7 @@ body{
 .content .load{
 	
 	position: relative;
-	margin-bottom: 0.6rem;
+	height: 2rem;
 	padding:  0 0.48rem;
 }
 .content .load p{
@@ -147,7 +147,7 @@ body{
 	left: 50%;
 	margin-left: -1.34rem;
 	opacity: 0;
-	bottom: -0.5rem;	
+	bottom: 0;	
 	transition: all 1s;	
 }
 .content .load .hint.show{	
