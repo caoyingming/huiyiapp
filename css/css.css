@@ -183,7 +183,8 @@ html{
 	color: #000;
 }
 .contentTwo .load a{
-	background: #216ccc;
+	color: #216ccc!important;
+	border: 1px solid #216ccc !important
 }
 .contentTwo .mainTwo .box img{
 	display: block;
@@ -226,7 +227,8 @@ html{
 	color: #000;
 }
 .contentS .load a{
-	background: #216ccc;
+	border:1px solid #216ccc;
+	color: #216ccc;
 }
 .contentS .mainS .list{
 	background: #fff;
