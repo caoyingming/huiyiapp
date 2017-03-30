@@ -52,8 +52,9 @@ body{
 	top: -1rem;
 }
 .content .main{
-	padding: 0 .48rem;
+	padding: 0 0.48rem;
 	-webkit-box-flex: 1;
+	overflow: hidden;
 }
 .content .main .logo img{
 	width: 1.97rem;
@@ -229,6 +230,7 @@ html{
 }
 .contentS .mainS .list{
 	background: #fff;
+
 }
 .contentS .mainS {
 	padding: 0;

@@ -5,15 +5,30 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" href="css/css.css">
 	<title>授权通过</title>
+	<style type="text/css">
+		
+	</style>
 </head>
-<body style="background: #fff;">
+<body style="background: #fff;" onload="loaded()">
 	<div class="content contentTwo contentS">
 		<div class="header">
 			<h1>会议入场</h1>
 		</div>
-		<div class="main mainTwo mainS">
-			<div class="list">
+		<div class="main mainTwo mainS"  id="wrapper">
+			<div class="list" id="scroller">
 				<ul>
+					<li><span class="span1">姓名</span><span class="span2岁">130****2259</span></li>
+					<li><span class="span1">验证通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">授权通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">姓名</span><span class="span2岁">130****2259</span></li>
+					<li><span class="span1">验证通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">授权通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">姓名</span><span class="span2岁">130****2259</span></li>
+					<li><span class="span1">验证通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">授权通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">姓名</span><span class="span2岁">130****2259</span></li>
+					<li><span class="span1">验证通过</span><span class="span2岁">2017 3:22:22</span></li>
+					<li><span class="span1">授权通过</span><span class="span2岁">2017 3:22:22</span></li>
 					<li><span class="span1">姓名</span><span class="span2岁">130****2259</span></li>
 					<li><span class="span1">验证通过</span><span class="span2岁">2017 3:22:22</span></li>
 					<li><span class="span1">授权通过</span><span class="span2岁">2017 3:22:22</span></li>
@@ -28,9 +43,24 @@
 		</div>
 	</div>
 
-
-
-
+	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src='js/demoUtils.js'></script>
 	<script type="text/javascript" src='js/public.js'></script>
+	<script type="text/javascript">
+
+
+		
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+	capture: false,
+	passive: false
+} : false);
+
+	</script>
 </body>
 </html>
