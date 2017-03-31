@@ -113,9 +113,9 @@ body{
 	display: none;
 }
 .content .load{
-	
+	padding-top: 0.1rem;
 	position: relative;
-	height: 2rem;
+	height: 1.9rem;
 	padding:  0 0.48rem;
 }
 .content .load p{
@@ -177,7 +177,7 @@ html{
 }
 .contentTwo .load{
 	
-	padding-bottom: 0.6rem;
+	
 }
 .contentTwo .load p{
 	color: #000;
@@ -254,8 +254,7 @@ html{
 .contentS .load{
 	margin-top: 0;
 	position: relative;
-	padding: 0 0.48rem;
-	padding-bottom: 1.4rem;
+	padding: 0.1rem 0.48rem 0;
 }
 
 .contentS .load p{
@@ -276,4 +275,16 @@ html{
 }
 .right{
 	margin-right: 0.6rem;
+}
+.header .div1{
+	height: 1.08rem;
+	border-bottom: 1px solid #e3e3e3;
+    font-size: 0.28rem;
+    line-height: 1.08rem;
+    padding-left: 0.5rem;
+    background: #fff;
+}
+.header .div1 .span1{
+	display: inline-block;
+	width: 1.6rem;
 }
