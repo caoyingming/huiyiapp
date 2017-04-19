@@ -82,6 +82,7 @@ body{
 .content .main form .p1 input:focus{
 	color: #fff;
 	line-height: 0.35rem;
+	padding-left: 0.02rem;
 }
 .content .main form .p1 input::-webkit-input-placeholder { /* WebKit browsers */  
     color: rgba(255,255,255,0.8);
