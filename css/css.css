@@ -74,10 +74,14 @@ body{
 	outline: none;
 	border-radius: 0.5rem;
 	font-size: 0.3rem;
-	line-height: 0.93rem;
+	line-height: 0.35rem;
 	color: rgba(255,255,255,0.8);
 	background-color:  #226ccd;
 	padding-left: 1.1rem
+}
+.content .main form .p1 input:focus{
+	color: #fff;
+	line-height: 0.35rem;
 }
 .content .main form .p1 input::-webkit-input-placeholder { /* WebKit browsers */  
     color: rgba(255,255,255,0.8);
@@ -108,6 +112,7 @@ body{
 	color: #216ccc;
 	margin-top: 0.34rem;
 }
+
 .content .main form .p2 input.block{
 	background: #FFFFFF;
 	

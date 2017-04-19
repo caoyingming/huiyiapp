@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" href="css/css.css">
-	<title>会议登录</title>
-</head>
-<body>
-	<div class="content">
-		<div class="header">
-			<h1>会议入场</h1>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/css.css">
+		<title>会议登录</title>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="header">
+				<h1>会议入场</h1>
+			</div>
+			<div class="main">
+				<div class="logo"><img src="image/logo.png" alt=""></div>
+				<form action="">
+					<p class="p1">
+						<input type="text" placeholder="请输入手机号码" id="txt">
+					</p>
+					<p class="p2">
+						<input id="ok" type="button" value="确定" disabled="disabled" class="">
+						<!--<input type="button" value="确定" disabled="disabled" class="dis">-->
+					</p>
+				</form>
+
+			</div>
+			<div class="load" id="ibo-window-bottom" style="">
+				<div class="hint">手机号有误，<br>请重新输入</div>
+				<p>太一护照下载</p>
+				<a href="" class="right">Android下载</a>
+				<a href="">IOS下载</a>
+			</div>
 		</div>
-		<div class="main">
-			<div class="logo"><img src="image/logo.png" alt=""></div>
-			<form action="">
-				<p class="p1">
-					<input type="text" placeholder="请输入手机号码" id="txt">
-				</p>
-				<p class="p2">
-					<input id="ok" type="button" value="确定" disabled="disabled" class="">
-					<!--<input type="button" value="确定" disabled="disabled" class="dis">-->
-				</p>
-			</form>
 
-			
-		</div>
-		<div class="load" id="ibo-window-bottom">
-			<div class="hint">手机号有误，<br>请重新输入</div>
-			<p>太一护照下载</p>
-			<a href="" class="right">Android下载</a>
-			<a href="">IOS下载</a>
-		</div>
-	</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src='js/public.js'></script>
+		<script type="text/javascript">
+			$(function() {
+				var reg = /^1\d{10}$/
+				$("#txt").on(' input propertychange',function() {
+					var txt = $('#txt').val();
+					console.log(txt);
+					if(!reg.test(txt)) {
+						$('.hint').addClass("show");
+						$('#ok').attr('disabled', 'disabled').removeClass('block')
+					} else {
+						$('#ok').prop('disabled', '').addClass('block')
+					}
+					return setTimeout(function() {
+						$('.hint').removeClass("show");
+					}, 3000)
 
+				})
 
+				var oHeight = $(document).height(); //屏幕当前的高度
 
-	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src='js/public.js'></script>
-	<script type="text/javascript">$(function() {
-	var reg = /^1\d{10}$/
-	$("#txt").blur(function() {
-		var txt = $('#txt').val();
-		console.log(txt);
-		if(!reg.test(txt)) {
-			$('.hint').addClass("show");
-			$('#ok').attr('disabled','disabled').removeClass('block')
-		}else{
-			$('#ok').prop('disabled','').addClass('block')
-		}
-		return setTimeout(function() {
-			$('.hint').removeClass("show");
-		}, 3000)
+				$(window).resize(function() {
+					if($(document).height() < oHeight) {
 
-	})
+						$("#ibo-window-bottom").css("display", "none");
 
-	var oHeight = $(document).height(); //屏幕当前的高度
+					} else {
 
-	$(window).resize(function() {
-		if($(document).height() < oHeight) {
+						$("#ibo-window-bottom").css("display", "block");
 
-			$("#ibo-window-bottom").css("display", "none");
+					}
+				
+				})
+			})
+		</script>
+	</body>
 
-		} else {
-
-			$("#ibo-window-bottom").css("display", "block");
-
-		}
-
-	})
-})</script>
-</body>
 </html>
-
-
