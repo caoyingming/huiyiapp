@@ -104,13 +104,13 @@ body{
 	border-radius: 0.5rem;
 	font-size: 0.36rem;
 	line-height: 0.93rem;
-	background-color:  #fff;
+	background-color:  rgba(255,255,255,0.6);
 	color: #216ccc;
 	margin-top: 0.34rem;
 }
-.content .main form .p2 input.dis{
-	background: rgba(255,255,255,0.6);
-	display: none;
+.content .main form .p2 input.block{
+	background: #FFFFFF;
+	
 }
 .content .load{
 	padding-top: 0.1rem;
